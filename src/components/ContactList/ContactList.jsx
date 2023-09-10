@@ -9,7 +9,6 @@ const ContactList = () => {
 
     const dispatch = useDispatch();
     const filteredContacts = useSelector(getFilteredContacts);
-    // const allContacts = useSelector(getContacts);
 
     const onContactDelete = contactId => {
         dispatch(deleteContact(contactId))
